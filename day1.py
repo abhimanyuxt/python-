@@ -65,5 +65,15 @@ sales = [100, 250, 300, 150, 400]
 total = calculate_total(sales)
 print(total)
 
+def sales_category(sales):
+    if sales > 50000:
+        return "good"
+    elif sales > 30000:
+        return "average"
+    else:
+        return "not good"
+print(sales_category(75000))
+print(sales_category(40000))
+
     
 
