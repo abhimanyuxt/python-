@@ -33,6 +33,8 @@ print(df[
 ])
 print(df.sort_values("wins", ascending=False))
 print(df.groupby("Team")["Points"].sum())
-
+print(df.groupby("Team").agg(
+    average_points=("Points","mean")
+))
 
 
