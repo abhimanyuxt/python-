@@ -1,3 +1,4 @@
+print("Abhimanyu")
 name = 'abhimanyu'
 age = 20
 cgpa = 9.5
