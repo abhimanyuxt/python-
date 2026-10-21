@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
 
 df = pd.DataFrame({
     "Product": ["Laptop", "Phone", "Tablet", "Laptop", "Phone", "Tablet", "Monitor", "Laptop"],
@@ -39,3 +40,11 @@ print(df["Sales"]>df["Sales"].mean())
 
 highest_sales = df.loc[df["Sales"].idxmax()]
 print(highest_sales)
+
+plt.plot(df["Product"],df["Profit"],marker="o")
+plt.title("Product vs Profit")
+plt.xlabel("Profit")
+plt.ylabel("Product")
+plt.show()
+
+
